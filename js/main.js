@@ -1,0 +1,2 @@
+const btn=document.getElementById('themeBtn');if(btn){btn.addEventListener('click',()=>{document.body.classList.toggle('light');localStorage.setItem('wael-theme',document.body.classList.contains('light')?'light':'dark')});if(localStorage.getItem('wael-theme')==='light')document.body.classList.add('light')}
+document.querySelectorAll('.filter button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected')}));
