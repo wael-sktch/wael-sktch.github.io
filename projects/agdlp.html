@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AGDLP Enterprise Authorization | WAEL</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+
+    <a class="brand" href="../index.html">
+
+        <span class="mark">W</span>
+
+        <span>
+            <b>WAEL</b>
+            <small>CYBERSECURITY ENGINEERING</small>
+        </span>
+
+    </a>
+
+    <nav>
+
+        <a href="../index.html">HOME</a>
+        <a class="active" href="../projects.html">WORK</a>
+        <a href="../architecture.html">ARCHITECTURE</a>
+        <a href="../labs.html">LABS</a>
+        <a href="../about.html">ABOUT</a>
+
+    </nav>
+
+    <div class="nav-actions">
+
+        <a
+            class="github"
+            href="https://github.com/wael-sktch"
+            target="_blank">
+
+            GITHUB ↗
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="page container">
+
+
+<!-- HERO -->
+
+<section>
+
+    <span class="eyebrow">
+        04 / IAM / ACTIVE DIRECTORY / AUTHORIZATION
+    </span>
+
+    <h1 class="page-title">
+        AGDLP <span>AUTHORIZATION.</span>
+    </h1>
+
+    <p class="lead">
+
+        An enterprise authorization laboratory demonstrating
+        structured Active Directory access management using
+        the AGDLP model: Accounts, Global groups, Domain Local
+        groups and Permissions.
+
+    </p>
+
+    <div class="actions">
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/AGDLP-Enterprise-Authorization-Model"
+            target="_blank">
+
+            VIEW GITHUB ↗
+
+        </a>
+
+        <a
+            class="btn"
+            href="../projects.html">
+
+            ALL PROJECTS →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROBLEM -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                AUTHORIZATION PROBLEM
+            </span>
+
+            <h2>
+                ACCESS WITHOUT <span>CHAOS.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+        <div class="philosophy">
+
+            <span class="tag">
+                THE PROBLEM
+            </span>
+
+            <h2>
+                DIRECT
+                PERMISSIONS
+                DON'T SCALE.
+            </h2>
+
+            <p>
+
+                Assigning permissions directly to individual
+                users creates administrative overhead and
+                makes access difficult to understand and
+                maintain.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                THE MODEL
+            </span>
+
+            <h2>
+                SEPARATE
+                IDENTITY
+                FROM ACCESS.
+            </h2>
+
+            <p>
+
+                AGDLP introduces structured group layers
+                between users and protected resources,
+                creating a repeatable authorization model.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- AGDLP -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                AUTHORIZATION MODEL
+            </span>
+
+            <h2>
+                ACCOUNT → GLOBAL → DOMAIN LOCAL → <span>PERMISSION.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="flow">
+
+        <b>ACCOUNT</b>
+
+        <i>→</i>
+
+        <b>GLOBAL GROUP</b>
+
+        <i>→</i>
+
+        <b>DOMAIN LOCAL GROUP</b>
+
+        <i>→</i>
+
+        <b>RESOURCE PERMISSION</b>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOUR LAYERS -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                01 / THE FOUR LAYERS
+            </span>
+
+            <h2>
+                BUILD THE <span>CHAIN.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>A</span>
+
+            <h3>
+                ACCOUNTS
+            </h3>
+
+            <p>
+
+                User identities represent the people or
+                service identities that require access.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>G</span>
+
+            <h3>
+                GLOBAL GROUPS
+            </h3>
+
+            <p>
+
+                Global groups represent role or business
+                membership and collect users with similar
+                responsibilities.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>DL</span>
+
+            <h3>
+                DOMAIN LOCAL GROUPS
+            </h3>
+
+            <p>
+
+                Domain Local groups represent access to
+                specific resources or permission scopes.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>P</span>
+
+            <h3>
+                PERMISSIONS
+            </h3>
+
+            <p>
+
+                Permissions are assigned to the resource
+                through the appropriate authorization group.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ARCHITECTURE -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                02 / AUTHORIZATION ARCHITECTURE
+            </span>
+
+            <h2>
+                IDENTITY → <span>AUTHORIZATION.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="architecture-preview">
+
+
+        <div class="arch-copy">
+
+            <span class="tag">
+                ENTERPRISE ACCESS MODEL
+            </span>
+
+            <h2>
+                USERS SHOULD
+                NOT NEED TO
+                KNOW PERMISSIONS.
+            </h2>
+
+            <p>
+
+                Users are associated with business roles,
+                while resource access is represented by
+                authorization groups.
+
+            </p>
+
+
+            <ul>
+
+                <li>User accounts represent identity</li>
+
+                <li>Global groups represent roles</li>
+
+                <li>Domain Local groups represent resources</li>
+
+                <li>Permissions are assigned to resources</li>
+
+                <li>Access is inherited through group membership</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="architecture-map">
+
+
+            <div class="cloud">
+
+                USERS
+
+                <small>
+                    ACCOUNTS
+                </small>
+
+            </div>
+
+
+            <div class="fw">
+
+                GLOBAL GROUPS
+
+                <small>
+                    BUSINESS ROLES
+                </small>
+
+            </div>
+
+
+            <div class="node n1">
+
+                DOMAIN LOCAL
+
+                <small>
+                    RESOURCE ACCESS
+                </small>
+
+            </div>
+
+
+            <div class="node n2">
+
+                FILE SERVER
+
+                <small>
+                    RESOURCE
+                </small>
+
+            </div>
+
+
+            <div class="node n3">
+
+                NTFS / SHARE
+
+                <small>
+                    PERMISSIONS
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ROLE DESIGN -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                03 / ROLE ENGINEERING
+            </span>
+
+            <h2>
+                ACCESS FOLLOWS <span>ROLE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>IDENTITY</span>
+
+            <h3>
+                USER ACCOUNT
+            </h3>
+
+            <p>
+
+                The account identifies the individual
+                requesting access.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>BUSINESS</span>
+
+            <h3>
+                ROLE
+            </h3>
+
+            <p>
+
+                The user's business function determines
+                the appropriate role membership.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>AUTHORIZATION</span>
+
+            <h3>
+                ACCESS GROUP
+            </h3>
+
+            <p>
+
+                The authorization layer determines which
+                protected resources can be accessed.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>RESOURCE</span>
+
+            <h3>
+                PERMISSION
+            </h3>
+
+            <p>
+
+                The resource receives permissions through
+                the designated authorization group.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- LEAST PRIVILEGE -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                04 / SECURITY CONTROL
+            </span>
+
+            <h2>
+                LEAST <span>PRIVILEGE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                CONTROL
+            </span>
+
+            <h2>
+                GRANT
+                ONLY WHAT
+                IS REQUIRED.
+            </h2>
+
+            <p>
+
+                Authorization should reflect the user's
+                actual business requirements rather than
+                providing broad access by default.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                GOVERNANCE
+            </span>
+
+            <h2>
+                CHANGE
+                THE ROLE,
+                NOT EVERY ACL.
+            </h2>
+
+            <p>
+
+                Group-based authorization reduces the
+                operational effort required when users
+                change departments or responsibilities.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- VALIDATION -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                05 / VALIDATION
+            </span>
+
+            <h2>
+                PROVE THE <span>ACCESS.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>01</span>
+
+            <h3>
+                EXPECTED ACCESS
+            </h3>
+
+            <p>
+
+                Verify that authorized users can reach
+                the resources required by their role.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>02</span>
+
+            <h3>
+                DENIED ACCESS
+            </h3>
+
+            <p>
+
+                Verify that users outside the authorization
+                path cannot access protected resources.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>03</span>
+
+            <h3>
+                GROUP MEMBERSHIP
+            </h3>
+
+            <p>
+
+                Validate that group membership correctly
+                determines effective access.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>04</span>
+
+            <h3>
+                PERMISSION REVIEW
+            </h3>
+
+            <p>
+
+                Review resource permissions and ensure
+                access follows the intended authorization model.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- IAM GOVERNANCE -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                IAM GOVERNANCE
+            </span>
+
+            <h2>
+                DESIGN FOR <span>CHANGE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                JOINER
+            </span>
+
+            <h2>
+                NEW USER
+            </h2>
+
+            <p>
+
+                Assign the appropriate business-role
+                membership instead of manually configuring
+                resource permissions.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                MOVER
+            </span>
+
+            <h2>
+                NEW ROLE
+            </h2>
+
+            <p>
+
+                Update role membership while keeping
+                resource authorization centralized.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                LEAVER
+            </span>
+
+            <h2>
+                REMOVE ACCESS
+            </h2>
+
+            <p>
+
+                Removing the identity from the authorization
+                path should remove its effective access.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- TECHNOLOGY -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                TECHNOLOGY STACK
+            </span>
+
+            <h2>
+                THE <span>STACK.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="chips">
+
+        <i>ACTIVE DIRECTORY</i>
+        <i>WINDOWS SERVER</i>
+        <i>AGDLP</i>
+        <i>GLOBAL GROUPS</i>
+        <i>DOMAIN LOCAL GROUPS</i>
+        <i>NTFS</i>
+        <i>SMB</i>
+        <i>RBAC</i>
+        <i>LEAST PRIVILEGE</i>
+        <i>IAM</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- EVIDENCE -->
+
+<section class="gallery container">
+
+    <span class="eyebrow">
+        EVIDENCE
+    </span>
+
+    <h2>
+        SHOW THE <span>AUTHORIZATION.</span>
+    </h2>
+
+    <p class="lead">
+
+        Architecture diagrams, Active Directory group
+        structure, resource permissions and access
+        validation evidence will be presented here.
+
+    </p>
+
+
+    <div class="gallery-grid">
+
+        <div class="shot one">
+            AGDLP ARCHITECTURE
+        </div>
+
+        <div class="shot two">
+            GLOBAL GROUPS
+        </div>
+
+        <div class="shot three">
+            DOMAIN LOCAL GROUPS
+        </div>
+
+        <div class="shot four">
+            RESOURCE PERMISSIONS
+        </div>
+
+        <div class="shot five">
+            ACCESS VALIDATION
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- OUTCOME -->
+
+<section class="section">
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                ENGINEERING OUTCOME
+            </span>
+
+            <h2>
+                ACCESS
+                BECOMES
+                <span>STRUCTURED.</span>
+            </h2>
+
+            <p>
+
+                The AGDLP model creates a clear separation
+                between identity, business role and resource
+                authorization.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                IAM ARCHITECTURE
+            </span>
+
+            <h2>
+                DESIGN
+                FOR
+                <span>SCALE.</span>
+            </h2>
+
+            <p>
+
+                A structured authorization model provides
+                a foundation for larger identity governance,
+                RBAC and enterprise access-control programs.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- GITHUB -->
+
+<section class="section">
+
+    <div class="philosophy">
+
+        <span class="tag">
+            SOURCE & DOCUMENTATION
+        </span>
+
+        <h2>
+            EXPLORE <span>AGDLP.</span>
+        </h2>
+
+        <p>
+
+            The complete authorization model,
+            implementation documentation and
+            supporting laboratory material are
+            maintained in GitHub.
+
+        </p>
+
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/AGDLP-Enterprise-Authorization-Model"
+            target="_blank">
+
+            VIEW AGDLP ON GITHUB ↗
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer container">
+
+    <span>
+        WAEL — CYBERSECURITY ENGINEERING
+    </span>
+
+    <span>
+        BUILD • BREAK • DETECT • ENGINEER • SECURE
+    </span>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

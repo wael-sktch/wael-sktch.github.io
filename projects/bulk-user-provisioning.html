@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bulk User Provisioning | WAEL</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+
+    <a class="brand" href="../index.html">
+
+        <span class="mark">W</span>
+
+        <span>
+            <b>WAEL</b>
+            <small>CYBERSECURITY ENGINEERING</small>
+        </span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="../index.html">HOME</a>
+
+        <a class="active" href="../projects.html">WORK</a>
+
+        <a href="../architecture.html">ARCHITECTURE</a>
+
+        <a href="../labs.html">LABS</a>
+
+        <a href="../about.html">ABOUT</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <a
+            class="github"
+            href="https://github.com/wael-sktch"
+            target="_blank">
+
+            GITHUB ↗
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main class="page container">
+
+
+<!-- HERO -->
+
+<section>
+
+    <span class="eyebrow">
+        03 / IAM / AUTOMATION / ACTIVE DIRECTORY
+    </span>
+
+
+    <h1 class="page-title">
+        BULK USER <span>PROVISIONING.</span>
+    </h1>
+
+
+    <p class="lead">
+
+        An enterprise IAM automation laboratory demonstrating
+        controlled bulk user provisioning in Active Directory
+        using PowerShell, structured identity data, validation,
+        organizational placement, group assignment and
+        operational logging.
+
+    </p>
+
+
+    <div class="actions">
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/Lab-11-Bulk-User-Provisioning"
+            target="_blank">
+
+            VIEW GITHUB ↗
+
+        </a>
+
+
+        <a
+            class="btn"
+            href="../projects.html">
+
+            ALL PROJECTS →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- IAM OBJECTIVE -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                IAM OBJECTIVE
+            </span>
+
+            <h2>
+                AUTOMATE <span>IDENTITY.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                BUSINESS PROBLEM
+            </span>
+
+
+            <h2>
+                SCALE
+                WITHOUT
+                CHAOS.
+            </h2>
+
+
+            <p>
+
+                Enterprise environments may need to provision
+                many users while maintaining consistent identity
+                attributes, organizational structure and access
+                assignments.
+
+            </p>
+
+
+            <p>
+
+                Manual provisioning increases the opportunity
+                for inconsistent configuration and operational
+                mistakes.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                ENGINEERING RESPONSE
+            </span>
+
+
+            <h2>
+                STANDARDIZE
+                THE PROCESS.
+            </h2>
+
+
+            <p>
+
+                PowerShell is used to turn a repeatable
+                identity-management process into an
+                controlled automation workflow.
+
+            </p>
+
+
+            <p>
+
+                The goal is repeatability, validation,
+                consistency and operational visibility.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- PROVISIONING WORKFLOW -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                PROVISIONING WORKFLOW
+            </span>
+
+
+            <h2>
+                DATA → <span>IDENTITY.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="flow">
+
+        <b>INPUT</b>
+
+        <i>→</i>
+
+        <b>VALIDATE</b>
+
+        <i>→</i>
+
+        <b>CREATE</b>
+
+        <i>→</i>
+
+        <b>ASSIGN</b>
+
+        <i>→</i>
+
+        <b>VERIFY</b>
+
+        <i>→</i>
+
+        <b>LOG</b>
+
+    </div>
+
+</section>
+
+
+
+<!-- INPUT -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                01 / IDENTITY DATA
+            </span>
+
+
+            <h2>
+                STRUCTURED <span>INPUT.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>IDENTITY</span>
+
+            <h3>
+                USER ATTRIBUTES
+            </h3>
+
+            <p>
+
+                User information provides the foundation
+                for automated account creation.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>ORGANIZATION</span>
+
+            <h3>
+                OU PLACEMENT
+            </h3>
+
+            <p>
+
+                Organizational structure can be reflected
+                in the destination for provisioned identities.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>ACCESS</span>
+
+            <h3>
+                GROUP MEMBERSHIP
+            </h3>
+
+            <p>
+
+                Security groups provide a controlled mechanism
+                for assigning access according to role.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>OPERATIONS</span>
+
+            <h3>
+                REPEATABILITY
+            </h3>
+
+            <p>
+
+                A standardized input process makes the
+                provisioning workflow repeatable.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- POWERSHELL -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                02 / AUTOMATION
+            </span>
+
+
+            <h2>
+                POWERSHELL <span>ENGINEERING.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="architecture-preview">
+
+
+        <div class="arch-copy">
+
+            <span class="tag">
+                AUTOMATION ENGINE
+            </span>
+
+
+            <h2>
+                CONSISTENT
+                IDENTITY
+                OPERATIONS
+            </h2>
+
+
+            <p>
+
+                PowerShell provides the automation layer
+                for interacting with Active Directory and
+                executing repeatable provisioning operations.
+
+            </p>
+
+
+            <ul>
+
+                <li>Read structured identity data</li>
+
+                <li>Validate required information</li>
+
+                <li>Create directory accounts</li>
+
+                <li>Place users appropriately</li>
+
+                <li>Assign security groups</li>
+
+                <li>Record operational results</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="architecture-map">
+
+
+            <div class="cloud">
+
+                INPUT
+
+                <small>
+                    USER DATA
+                </small>
+
+            </div>
+
+
+            <div class="fw">
+
+                POWERSHELL
+
+                <small>
+                    AUTOMATION
+                </small>
+
+            </div>
+
+
+            <div class="node n1">
+
+                ACTIVE DIRECTORY
+
+                <small>
+                    IDENTITIES
+                </small>
+
+            </div>
+
+
+            <div class="node n2">
+
+                GROUPS
+
+                <small>
+                    ACCESS
+                </small>
+
+            </div>
+
+
+            <div class="node n3">
+
+                LOGGING
+
+                <small>
+                    VALIDATION
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- VALIDATION -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                03 / VALIDATION
+            </span>
+
+
+            <h2>
+                DON'T JUST <span>CREATE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>01</span>
+
+            <h3>
+                REQUIRED DATA
+            </h3>
+
+            <p>
+
+                Validate that required identity information
+                is available before provisioning.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>02</span>
+
+            <h3>
+                DUPLICATE DETECTION
+            </h3>
+
+            <p>
+
+                Prevent unintended duplicate identities
+                during automated operations.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>03</span>
+
+            <h3>
+                DIRECTORY PLACEMENT
+            </h3>
+
+            <p>
+
+                Verify that provisioned accounts are placed
+                in the intended organizational structure.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>04</span>
+
+            <h3>
+                ACCESS ASSIGNMENT
+            </h3>
+
+            <p>
+
+                Validate security-group membership after
+                provisioning.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- SECURITY -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                04 / IAM SECURITY
+            </span>
+
+
+            <h2>
+                PROVISIONING WITH <span>CONTROL.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                LEAST PRIVILEGE
+            </span>
+
+
+            <h2>
+                ACCESS
+                SHOULD
+                FOLLOW ROLE.
+            </h2>
+
+
+            <p>
+
+                Provisioning should not automatically result
+                in unrestricted access. Identity creation and
+                authorization should remain controlled processes.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                OPERATIONAL VISIBILITY
+            </span>
+
+
+            <h2>
+                KNOW
+                WHAT
+                HAPPENED.
+            </h2>
+
+
+            <p>
+
+                Logging provides evidence of provisioning
+                operations and supports troubleshooting
+                and operational review.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- IAM MODEL -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                IAM CONTROL MODEL
+            </span>
+
+
+            <h2>
+                IDENTITY → ROLE → <span>ACCESS.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+
+        <div>
+
+            <span>IDENTITY</span>
+
+            <h3>
+                USER
+            </h3>
+
+            <p>
+                The individual identity represented
+                within the directory.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>ROLE</span>
+
+            <h3>
+                BUSINESS FUNCTION
+            </h3>
+
+            <p>
+                The user's organizational or business
+                responsibility.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>GROUP</span>
+
+            <h3>
+                SECURITY GROUP
+            </h3>
+
+            <p>
+                The authorization mechanism used to
+                represent access requirements.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>RESOURCE</span>
+
+            <h3>
+                CONTROLLED ACCESS
+            </h3>
+
+            <p>
+                Access to enterprise resources based
+                on assigned authorization.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- TECHNOLOGY -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                TECHNOLOGY STACK
+            </span>
+
+
+            <h2>
+                THE <span>STACK.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="chips">
+
+        <i>ACTIVE DIRECTORY</i>
+        <i>POWERSHELL</i>
+        <i>WINDOWS SERVER</i>
+        <i>IAM</i>
+        <i>RBAC</i>
+        <i>SECURITY GROUPS</i>
+        <i>ORGANIZATIONAL UNITS</i>
+        <i>AUTOMATION</i>
+        <i>LOGGING</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- EVIDENCE -->
+
+<section class="gallery container">
+
+    <span class="eyebrow">
+        EVIDENCE
+    </span>
+
+
+    <h2>
+        SHOW THE <span>PROCESS.</span>
+    </h2>
+
+
+    <p class="lead">
+
+        Screenshots and implementation evidence will
+        demonstrate the provisioning workflow, Active
+        Directory results, PowerShell execution and
+        validation.
+
+    </p>
+
+
+    <div class="gallery-grid">
+
+
+        <div class="shot one">
+            INPUT DATA
+        </div>
+
+
+        <div class="shot two">
+            POWERSHELL
+        </div>
+
+
+        <div class="shot three">
+            ACTIVE DIRECTORY
+        </div>
+
+
+        <div class="shot four">
+            GROUP ASSIGNMENT
+        </div>
+
+
+        <div class="shot five">
+            VALIDATION / LOGGING
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- OUTCOME -->
+
+<section class="section">
+
+    <div class="split">
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                ENGINEERING OUTCOME
+            </span>
+
+
+            <h2>
+                AUTOMATE<br>
+                THE <span>REPEATABLE.</span>
+            </h2>
+
+
+            <p>
+
+                This laboratory demonstrates how IAM
+                administration can be transformed from
+                repetitive manual work into a standardized,
+                validated and documented automation process.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                IAM ENGINEERING
+            </span>
+
+
+            <h2>
+                SCALE<br>
+                WITH<br>
+                <span>CONTROL.</span>
+            </h2>
+
+
+            <p>
+
+                The same engineering principles can be
+                extended toward larger identity lifecycle
+                workflows, role management and hybrid
+                identity environments.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- GITHUB -->
+
+<section class="section">
+
+    <div class="philosophy">
+
+
+        <span class="tag">
+            SOURCE & DOCUMENTATION
+        </span>
+
+
+        <h2>
+            EXPLORE <span>THE LAB.</span>
+        </h2>
+
+
+        <p>
+
+            The implementation, PowerShell automation and
+            project documentation are maintained in GitHub.
+
+        </p>
+
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/Lab-11-Bulk-User-Provisioning"
+            target="_blank">
+
+            VIEW PROJECT ON GITHUB ↗
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer container">
+
+    <span>
+        WAEL — CYBERSECURITY ENGINEERING
+    </span>
+
+
+    <span>
+        BUILD • BREAK • DETECT • ENGINEER • SECURE
+    </span>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

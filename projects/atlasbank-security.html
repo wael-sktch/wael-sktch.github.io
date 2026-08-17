@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AtlasBank Web Security | WAEL</title>
+
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="nav">
+
+    <a class="brand" href="../index.html">
+        <span class="mark">W</span>
+
+        <span>
+            <b>WAEL</b>
+            <small>CYBERSECURITY ENGINEERING</small>
+        </span>
+    </a>
+
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a class="active" href="../projects.html">WORK</a>
+        <a href="../architecture.html">ARCHITECTURE</a>
+        <a href="../labs.html">LABS</a>
+        <a href="../about.html">ABOUT</a>
+    </nav>
+
+    <div class="nav-actions">
+        <a
+            class="github"
+            href="https://github.com/wael-sktch"
+            target="_blank">
+            GITHUB ↗
+        </a>
+    </div>
+
+</header>
+
+
+<main class="page container">
+
+
+<!-- HERO -->
+
+<section>
+
+    <span class="eyebrow">
+        02 / PURPLE TEAM / APPLICATION SECURITY
+    </span>
+
+    <h1 class="page-title">
+        ATLASBANK WEB <span>SECURITY.</span>
+    </h1>
+
+    <p class="lead">
+
+        A production-inspired web application security laboratory
+        combining offensive testing, WAF protection, security
+        telemetry, detection engineering, investigation,
+        remediation and validation.
+
+    </p>
+
+    <div class="actions">
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/AtlasBank-Web-Security-Purple-Team-Lab-"
+            target="_blank">
+
+            VIEW GITHUB ↗
+
+        </a>
+
+        <a
+            class="btn"
+            href="../labs.html">
+
+            VIEW LABS →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ENGAGEMENT MODEL -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                PURPLE TEAM ENGAGEMENT
+            </span>
+
+            <h2>
+                ATTACK. <span>DETECT.</span> IMPROVE.
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+        <div>
+            <span>01</span>
+            <h3>RECON</h3>
+            <p>
+                Identify exposed services, application
+                paths and attack surface.
+            </p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>TEST</h3>
+            <p>
+                Perform controlled web application security
+                testing against the laboratory environment.
+            </p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>DETECT</h3>
+            <p>
+                Capture WAF, web server and security telemetry
+                for investigation.
+            </p>
+        </div>
+
+        <div>
+            <span>04</span>
+            <h3>REMEDIATE</h3>
+            <p>
+                Apply security improvements and validate
+                the resulting behavior.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- APPLICATION -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                APPLICATION
+            </span>
+
+            <h2>
+                THE <span>ATLASBANK</span> APPLICATION.
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+        <div class="philosophy">
+
+            <span class="tag">
+                APPLICATION LAYER
+            </span>
+
+            <h2>
+                BANKING
+                WORKFLOWS
+            </h2>
+
+            <p>
+
+                The laboratory application provides realistic
+                banking workflows for security testing,
+                including authentication, customer access,
+                accounts and transfers.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                TEST SURFACE
+            </span>
+
+            <h2>
+                WEB + API
+            </h2>
+
+            <p>
+
+                The environment provides both web application
+                functionality and API-oriented attack surfaces
+                for security validation.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="chips">
+
+        <i>LOGIN</i>
+        <i>AUTHENTICATION</i>
+        <i>SESSIONS</i>
+        <i>DASHBOARD</i>
+        <i>ACCOUNTS</i>
+        <i>TRANSFERS</i>
+        <i>API</i>
+        <i>DATABASE</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- SECURITY ARCHITECTURE -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                SECURITY ARCHITECTURE
+            </span>
+
+            <h2>
+                REQUEST → <span>DEFENSE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="architecture-preview">
+
+        <div class="arch-copy">
+
+            <span class="tag">
+                TRAFFIC FLOW
+            </span>
+
+            <h2>
+                CONTROLLED
+                APPLICATION
+                ACCESS
+            </h2>
+
+            <p>
+
+                Application traffic passes through the
+                security layer before reaching the banking
+                application.
+
+            </p>
+
+            <ul>
+
+                <li>Client / Security Testing Host</li>
+                <li>Nginx Reverse Proxy</li>
+                <li>ModSecurity</li>
+                <li>OWASP Core Rule Set</li>
+                <li>AtlasBank Application</li>
+                <li>Splunk Security Monitoring</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="architecture-map">
+
+            <div class="cloud">
+                ATTACKER
+                <small>KALI / TEST HOST</small>
+            </div>
+
+            <div class="fw">
+                WAF
+                <small>NGINX + MODSECURITY</small>
+            </div>
+
+            <div class="node n1">
+                WEB APP
+                <small>ATLASBANK</small>
+            </div>
+
+            <div class="node n2">
+                DATABASE
+                <small>APPLICATION DATA</small>
+            </div>
+
+            <div class="node n3">
+                SIEM
+                <small>SPLUNK</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- RECON -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                01 / RECONNAISSANCE
+            </span>
+
+            <h2>
+                UNDERSTAND THE <span>ATTACK SURFACE.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+        <div>
+
+            <span>DISCOVERY</span>
+
+            <h3>
+                SERVICE ENUMERATION
+            </h3>
+
+            <p>
+                Identify exposed services and application
+                entry points before deeper testing.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>WEB</span>
+
+            <h3>
+                NIKTO
+            </h3>
+
+            <p>
+                Automated web server and application
+                reconnaissance.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>MANUAL</span>
+
+            <h3>
+                APPLICATION REVIEW
+            </h3>
+
+            <p>
+                Review authentication, sessions,
+                application workflows and inputs.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>API</span>
+
+            <h3>
+                ENDPOINT TESTING
+            </h3>
+
+            <p>
+                Assess application API behavior and
+                security controls.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WAF -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                02 / DEFENSE
+            </span>
+
+            <h2>
+                WAF <span>PROTECTION.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="split">
+
+        <div class="philosophy">
+
+            <span class="tag">
+                REVERSE PROXY
+            </span>
+
+            <h2>
+                NGINX
+            </h2>
+
+            <p>
+
+                Nginx provides the controlled entry point
+                between the security testing environment
+                and the application.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                APPLICATION FIREWALL
+            </span>
+
+            <h2>
+                MODSECURITY
+            </h2>
+
+            <p>
+
+                ModSecurity and the OWASP Core Rule Set
+                provide an application-layer security
+                control for identifying suspicious requests.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="chips">
+
+        <i>NGINX</i>
+        <i>MODSECURITY</i>
+        <i>OWASP CRS</i>
+        <i>SECURITY RULES</i>
+        <i>REQUEST INSPECTION</i>
+        <i>LOGGING</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- DETECTION -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                03 / DETECTION ENGINEERING
+            </span>
+
+            <h2>
+                TURN ATTACKS INTO <span>TELEMETRY.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+        <div>
+
+            <span>WEB</span>
+
+            <h3>
+                NGINX LOGS
+            </h3>
+
+            <p>
+                Capture web requests and server activity
+                for investigation.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>WAF</span>
+
+            <h3>
+                MODSECURITY AUDIT
+            </h3>
+
+            <p>
+                Capture security-rule activity generated
+                by application requests.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>SIEM</span>
+
+            <h3>
+                SPLUNK
+            </h3>
+
+            <p>
+                Centralize telemetry and support
+                security investigation.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>ANALYSIS</span>
+
+            <h3>
+                ATTACK PATTERNS
+            </h3>
+
+            <p>
+                Correlate application activity with
+                security testing behavior.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- TESTING -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                04 / SECURITY TESTING
+            </span>
+
+            <h2>
+                BREAK THE <span>APPLICATION.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="principles">
+
+        <div>
+
+            <span>01</span>
+
+            <h3>
+                INPUT VALIDATION
+            </h3>
+
+            <p>
+                Test application inputs for unexpected
+                or malicious data handling.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>02</span>
+
+            <h3>
+                SQL INJECTION
+            </h3>
+
+            <p>
+                Conduct controlled injection testing
+                against application input points.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>03</span>
+
+            <h3>
+                AUTHENTICATION
+            </h3>
+
+            <p>
+                Assess login, session and authentication
+                behavior.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <span>04</span>
+
+            <h3>
+                API SECURITY
+            </h3>
+
+            <p>
+                Validate API behavior and authorization
+                controls.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- VALIDATION -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                05 / VALIDATION
+            </span>
+
+            <h2>
+                TEST → FIX → <span>RETEST.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="flow">
+
+        <b>ATTACK</b>
+
+        <i>→</i>
+
+        <b>OBSERVE</b>
+
+        <i>→</i>
+
+        <b>INVESTIGATE</b>
+
+        <i>→</i>
+
+        <b>REMEDIATE</b>
+
+        <i>→</i>
+
+        <b>RETEST</b>
+
+    </div>
+
+
+    <p class="lead">
+
+        The objective is not simply to identify weaknesses.
+        The laboratory connects offensive testing with
+        defensive controls and validates whether security
+        improvements actually change the observed behavior.
+
+    </p>
+
+</section>
+
+
+
+<!-- TECHNOLOGY -->
+
+<section class="section">
+
+    <div class="section-head">
+
+        <div>
+
+            <span class="eyebrow">
+                TECHNOLOGY STACK
+            </span>
+
+            <h2>
+                THE <span>STACK.</span>
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="chips">
+
+        <i>KALI LINUX</i>
+        <i>NGINX</i>
+        <i>MODSECURITY</i>
+        <i>OWASP CRS</i>
+        <i>NIKTO</i>
+        <i>SPLUNK</i>
+        <i>PHP</i>
+        <i>MYSQL</i>
+        <i>REST API</i>
+        <i>LINUX</i>
+
+    </div>
+
+</section>
+
+
+
+<!-- EVIDENCE -->
+
+<section class="gallery container">
+
+    <span class="eyebrow">
+        EVIDENCE
+    </span>
+
+    <h2>
+        SHOW THE <span>PROOF.</span>
+    </h2>
+
+    <p class="lead">
+
+        Security testing evidence, WAF events, application
+        telemetry and SIEM investigation screenshots will
+        be presented here.
+
+    </p>
+
+
+    <div class="gallery-grid">
+
+        <div class="shot one">
+            RECONNAISSANCE
+        </div>
+
+        <div class="shot two">
+            NIKTO RESULTS
+        </div>
+
+        <div class="shot three">
+            MODSECURITY
+        </div>
+
+        <div class="shot four">
+            SPLUNK DETECTION
+        </div>
+
+        <div class="shot five">
+            VALIDATION
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- OUTCOME -->
+
+<section class="section">
+
+    <div class="split">
+
+        <div class="philosophy">
+
+            <span class="tag">
+                SECURITY ENGINEERING
+            </span>
+
+            <h2>
+                OFFENSE<br>
+                MEETS <span>DEFENSE.</span>
+            </h2>
+
+            <p>
+
+                AtlasBank demonstrates how application
+                security testing can be connected directly
+                to defensive engineering and security
+                monitoring.
+
+            </p>
+
+        </div>
+
+
+        <div class="philosophy">
+
+            <span class="tag">
+                PURPLE TEAM
+            </span>
+
+            <h2>
+                FIND IT.<br>
+                DETECT IT.<br>
+                FIX IT.
+            </h2>
+
+            <p>
+
+                Each security test becomes an opportunity
+                to improve visibility, controls and
+                application resilience.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- GITHUB -->
+
+<section class="section">
+
+    <div class="philosophy">
+
+        <span class="tag">
+            SOURCE & DOCUMENTATION
+        </span>
+
+        <h2>
+            EXPLORE <span>ATLASBANK.</span>
+        </h2>
+
+        <p>
+
+            The complete project implementation,
+            laboratory documentation and security
+            engineering work are maintained in GitHub.
+
+        </p>
+
+        <a
+            class="btn primary"
+            href="https://github.com/wael-sktch/AtlasBank-Web-Security-Purple-Team-Lab-"
+            target="_blank">
+
+            VIEW ATLASBANK ON GITHUB ↗
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer container">
+
+    <span>
+        WAEL — CYBERSECURITY ENGINEERING
+    </span>
+
+    <span>
+        BUILD • BREAK • DETECT • ENGINEER • SECURE
+    </span>
+
+</footer>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
