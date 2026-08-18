@@ -13,3 +13,107 @@
 @media(max-width:600px){.nav{height:auto;min-height:70px;padding:12px 4vw;flex-wrap:wrap;gap:10px}.nav nav{order:3;width:100%;overflow:auto}.nav nav a{padding:8px 0;font-size:8px}.hero h1{font-size:54px}.project-grid,.lab-grid,.lab-grid.big,.metrics,.principles{grid-template-columns:1fr}.architecture-preview{display:block}.arch-copy{padding:30px}.architecture-map{min-height:420px}.section{padding:60px 0}.section-head{display:block}.section-head>a{display:inline-block;margin-top:10px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:140px 140px 140px}.shot.one{grid-row:span 1;grid-column:span 2}.about-layout{gap:20px}.portrait.large{height:360px}.case>div:last-child{padding:30px}.case h2{font-size:40px}.page{padding:70px 0}}
 
 body.light{--bg:#f4f7f5;--panel:#fff;--panel2:#eef3f0;--line:#cfdad5;--text:#102019;--muted:#596963;background:#f4f7f5}body.light .nav{background:rgba(244,247,245,.9)}body.light .project-card,body.light .lab-card,body.light .architecture-preview,body.light .philosophy,body.light .about-mini,body.light .case,body.light .principles>div,body.light .big-arch{background:#fff}body.light .hero-visual,body.light .architecture-map{background-color:#eaf2ed}
+
+/* =========================================================
+   ATLAS CORE — AUTOMATED SECURITY ENGAGEMENTS
+   ========================================================= */
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.engagement-card {
+  display: block;
+  position: relative;
+  min-height: 250px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: linear-gradient(160deg, #0a1719, #050c0e);
+  color: inherit;
+  text-decoration: none;
+  transition: .25s ease;
+  overflow: hidden;
+}
+
+.engagement-card:hover {
+  transform: translateY(-6px);
+  border-color: #42e46f;
+  box-shadow: 0 15px 40px rgba(0,0,0,.3);
+}
+
+.engagement-number {
+  display: block;
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: .15em;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.engagement-card h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 34px;
+  line-height: .95;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+.engagement-description {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+.engagement-footer {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.engagement-status {
+  font-size: 8px;
+  letter-spacing: .14em;
+  font-weight: 700;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+}
+
+.engagement-status.completed {
+  color: var(--green);
+  border-color: #28603b;
+}
+
+.engagement-status.planned {
+  color: #82908c;
+}
+
+.engagement-arrow {
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+#engagement-status {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .08em;
+}
+
+@media(max-width:900px) {
+  .engagement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px) {
+  .engagement-grid {
+    grid-template-columns: 1fr;
+  }
+}
